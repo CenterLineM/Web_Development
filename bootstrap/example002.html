@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title>Bootstrap 实例</title>
+    <!-- 適用於不同設備 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap 樣式表 -->
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>表格</h2>
+      <p>響應式表格 (小於768px的設備垂直移動)： 大標小標不同顏色</p>
+      <div class="table-responsive">
+       <table class="table table-striped table-bordered">
+         <thead>
+           <tr>
+             <th>#</th>
+             <th>Name</th>
+             <th>Street</th>
+           </tr>
+         </thead>
+
+         <tbody>
+           <tr>
+             <td>1</td>
+             <td>Anna Awesome</td>
+             <td>Broome Street</td>
+           </tr>
+           <tr>
+             <td>2</td>
+             <td>Debbie Dallas</td>
+             <td>Houston Street</td>
+           </tr>
+           <tr>
+             <td>3</td>
+             <td>John Doe</td>
+             <td>Madison Street</td>
+           </tr>
+         </tbody>
+       </table>
+      </div>
+
+      <h2>圖片</h2>
+      <p>創建響應式圖片。 另外：橢圓形標框：</p>
+      <img src="image/1.jpg" class="img-responsive img-circle" alt="Cinque Terre" width="304" height="236">
+
+      <h2>圖標</h2>
+      <p>插入圖標:</p>
+      <p>雲图标: <span class="glyphicon glyphicon-cloud"></span></p>
+      <p>mail图标: <span class="glyphicon glyphicon-envelope"></span></p>
+      <p>search图标: <span class="glyphicon glyphicon-search"></span></p>
+      <p>print图标: <span class="glyphicon glyphicon-print"></span></p>
+      <p>download图标：<span class="glyphicon glyphicon-download"></span></p>
+    </div>
+
+    <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+    <!-- 可选: 包含 jQuery 库 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
+    <script src="https://apps.bdimg.com/libs/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
