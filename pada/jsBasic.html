@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Javascript</title>
+	<!-- 亂碼解決 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<script type="text/javascript">
+
+	/*
+		// 範例
+		// 輸入: prompt(提示值, 預設值) -> 運算 -> 結果顯示
+		// 簡單乘法運算
+		var n1=prompt("請輸入數字", "4");
+		var n2=prompt("請輸入數字", "8");
+		var result = n1*n2;
+		alert(result); 
+
+		// 範例 : Javascript 流程控制
+		// 簡易計算機
+
+		var user="yes";
+		while(user == "yes")
+		{
+			alert("簡易計算機");
+			var n1=prompt("輸入數字", " 9 ");
+			var n2=prompt("輸入數字", " 4 ");
+			
+			//資料型態轉換: String -> Number
+		 
+			n1=Number(n1);
+			n2=Number(n2);
+			var opr = prompt("輸入你要運算的類型: + , - , * , /", " ");
+			var result;
+
+			if (opr == "+") {
+				result = n1 + n2;
+				alert(result);
+				user = no;
+			}
+			else if (opr == "-") {
+				result = n1 - n2;
+				alert(result);
+				user = no;
+			}
+			else if (opr == "*") {
+				result = n1*n2;
+				alert(result);
+				user = no;
+			}
+			else if (opr == "/") {
+				result = n1/n2;
+				alert(result);
+				user = no;
+			}
+			else {
+				alert("你輸入資料錯誤");
+				alert("是否繼續 yes no")
+				var input1;
+				// 判斷是否繼續重新輸入
+				prompt("請輸入 yes 或 no", "no");
+				// Bug 錯誤!!!
+				if (input1 == "yes") {
+					user = "yes" ;
+				}
+				else{
+					user = "no";
+				}
+			}
+
+		}
+		*/
+
+		/*
+		建議 函數入門
+		函數的基礎
+		設計階段
+		*/
+		/*
+		alert("函式示範")
+		function add(n1, n2){
+			alert(n1+n2);
+			return n1+n2;
+		}
+
+		//呼叫/使用階段
+		alert("示範函數結果互乘")
+
+		var result=add(8,9)*add(60, 90);
+		alert(result);
+
+
+		*/
+		//整合範例
+		alert("範例: ")
+		function getSum(max){
+			var sum=0;
+			var n=1;
+			while(n<=max){
+				// 加法累進
+				sum+=n;
+				n++;
+			}
+			alert(sum);
+			return sum;
+		}
+		var result = getSum(50)*getSum(100);
+		alert(result);
+
+
+		
+
+	</script>
+</head>
+<body>
+
+
+
+</body>
+</html>
