@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>
+		
+		JavaScript Object
+
+	</title>
+	<script type="text/javascript">
+	/* 設計玩家物件
+		// 定義玩家
+		var player= new Object(); 
+		//玩家名稱
+		player.name="john";
+		//玩家血量
+		player.hp=100;
+
+		// 方法: 打架 扣血
+		player.fight=function(){
+			this.hp = this.hp -1 ;
+
+		};
+
+		// 方法: 休息 回血
+		player.rest=function(){
+			this.hp++;
+		};
+
+		//方法 : 回報 玩家狀態
+		player.report= function(){
+			alert(this.name+": "+this.hp);
+		};
+
+		player.fight;
+		player.rest;
+		player.report
+		*/
+
+		// 正規的寫法
+
+		function Player(name ,hp){ //建構物件函式
+			// this 代表新建的空白物件
+			this.name = name ;
+			this.hp = hp;
+			this.fight = function(){
+				this.hp-=2;
+			};
+
+			this.rest = function(){
+				this.hp++;
+			};
+
+			this.report =function(){
+				alert(this.name+": "+this.hp);
+
+			};
+
+		}
+
+		var player1= new Player("john",100);
+		player1.fight();
+		player1.report();
+
+		var player2 = new Player("bob", 80);
+		player2.rest();
+		player2.report();
+
+
+		
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
