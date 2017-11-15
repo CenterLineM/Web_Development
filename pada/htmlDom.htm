@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>
+		HTML DOM
+	</title>
+
+	<script type="text/javascript">
+		// 修改一部分
+		function change(){
+			//修改 HTML
+			spanObj = document.getElementById("emotion");
+			spanObj.innerHTML = "bad ";
+			//修改CSS
+			spanObj.style.color="red";
+			spanObj.style.fontWeight="bold";
+			//隱藏
+			//spanObj.style.display="none";
+
+
+
+		}
+
+
+	</script>
+</head>
+<body>
+
+<div>
+	Today is <span id="emotion">good </span>day. Let's go to movie.
+</div>
+
+<button onclick="change();">change</button>
+
+</body>
+</html>
